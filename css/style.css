@@ -20,6 +20,8 @@ header{
     font-size: 400%;
     margin: 10px;
     text-align: center;
+    height: 300px;
+    width: 300px;
 }
 .site{
     color: #baaaaa;
@@ -45,15 +47,22 @@ header{
 
 .site:hover{
     background-image: url(../ressource/image/audiRS8.jpg);
-    transition: 1s;
+    transition: 0.5s;
     color: transparent;
+    transform: translateY(-30px);
 }
+
 .passion:hover{
+    background-image: url(../ressource/image/audi3.jpg);
+    transition: 0.5s;
+    color: transparent;
+    transform: translateY(-100px);
 }
 .car:hover{
-    font-weight: 800;
-    transition: 1s;
-    color: #6d0752;
+    background-image: url(../ressource/image/audi2.jpg);
+    transition: 0.5s;
+    color: transparent;
+    transform: translateY(-200px);
 }
 
 
@@ -65,6 +74,7 @@ header{
     font-size: 100px;
     font-weight: 300;
     font-family: 'lato','sans-serif';
+    
 }
 .style{
     background-color: black;
@@ -106,6 +116,7 @@ header{
     display: block;
     width: 100%;
     border-radius: 20px;
+    height: 500px;
 }
 
 p{
@@ -119,12 +130,21 @@ p{
     background-image: url(../ressource/image/audipaysage1.jpg);
     background-attachment: fixed;
     background-size: cover;
-    height: 50vh;
-}
-.fan h2{
+    background-position: center;
+    height: 100vh;
     
 }
-
+.fan h2{
+    text-align: center;
+    font-family: 'benchnine',sans-serif;
+    font-weight: 200;
+    font-size: 500%;
+}
+.fan-com{
+    font-size: 30px;
+    color: white;
+    
+}
 
 
 
