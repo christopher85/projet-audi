@@ -68,6 +68,9 @@ header{
 
 /*style de voiture
 ========================*/
+.fam{
+    background-color: #ded7d7;
+}
 
 .style h1{
     text-align: center;
@@ -140,12 +143,23 @@ p{
     font-weight: 200;
     font-size: 500%;
 }
-.fan-com{
-    font-size: 30px;
+blockquote{
+    font-size: 15px;
     color: white;
+    margin: 10px;
     
 }
+.girls{
+    position: absolute;
+    top: 280px;
+}
 
+cite{
+    position: absolute;
+    right: 30px;
+    color: white;
+    margin: 10px;
+}
 
 
 
