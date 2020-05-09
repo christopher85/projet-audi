@@ -80,8 +80,8 @@ header{
     
 }
 .style{
-    background-color: black;
-    color: #eee;
+    background-color: #cacec3;
+    color: #000000;
     height: 150px;
     border-radius: 50px;
     margin: 15px;
@@ -140,11 +140,12 @@ p{
 .fan h2{
     text-align: center;
     font-family: 'benchnine',sans-serif;
-    font-weight: 200;
+    font-weight: 180;
     font-size: 500%;
 }
 blockquote{
-    font-size: 15px;
+    font-family: 'benchnine',sans-serif;
+    font-size: 20px;
     color: white;
     margin: 10px;
     
@@ -160,10 +161,83 @@ cite{
     color: white;
     margin: 10px;
 }
+.site-girl{
+    position: absolute;
+    top: 500px;
+}
 
+/*galeries
+=============*/
 
+.galerie-photo img{
+    width: 20%;
+    height: 20%;
+    border: 4px solid #a2a2a2;
+    margin: 0;
+}
 
+.galerie1{
+    transform: rotate(-15deg);
+    position: absolute;
+    left: 100px;
+    top: 15px;
+}
 
+.galerie2{
+    position: absolute;
+    left: 450px;
+    top: 20px;
+    transform: rotate(10deg);
+}
+
+.galerie3{
+    position: absolute;
+    right: 20px;
+    transform:rotate(-10deg);
+}
+
+.galerie4{
+    position: absolute;
+    top: 180px;
+    left: 190px;
+    transform: rotate(-20deg);
+}
+
+.galerie5{
+    position: absolute;
+    top: 200px;
+    right:100px;
+    transform: rotate(18deg)
+}
+
+.galerie6{
+    position: absolute;
+    top: 280px;
+    left: 450px;
+    transform: rotate(15deg);
+}
+
+.galerie7{
+    position: absolute;
+    top: 350px;
+    transform: rotate(20deg);
+    left: 80px;
+}
+
+.galerie8{
+    position: absolute;
+    top: 380px;
+    right: 30px;
+    transform: rotate(-20deg);
+}
+
+.galerie9{
+    position: absolute;
+    top: 480px;
+    left: 450px;
+    transform: rotate(-10deg);
+    
+}
 
 
 
