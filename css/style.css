@@ -2,8 +2,23 @@ html{
     background-color: #fff; 
 }
 
-h1{
-    
+/* navbar
+==============*/
+.fixed-top{
+    background-color: #696969;
+}
+
+.navbar-brand{
+    background-color: white;
+    font-family: 'benchnine' , sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.ml-auto{
+    background-color: white;
+    border-radius: 30px;
+    font-family: 'benchnine' , sans-serif;
+    font-size: 20px;
 }
 
 /*passionné
@@ -126,6 +141,85 @@ p{
     font-size: 80%;
     font-family: 'benchnine',sans-serif;
 }
+
+.infobulle{
+    transform: scale(0) rotateX(-180deg);
+    position: absolute;
+    background-color: rgba(242, 8, 8, 0.56);
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 0 0.5px (0 0 0 0.3);
+    transition: 2s;
+    left: 100px;
+    font-size: 20px;
+}
+
+.infobulle::before{
+    content: "";
+    position: absolute;
+    border-bottom: 10px solid rgba(242, 8, 8, 0.56);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-top: -10px;
+    margin-left: 60px;
+}
+.element:hover> .infobulle{
+    transform: scale(1) rotateX(0);
+}
+
+
+.infobulle2{
+    transform: scale(0) rotatez(-180deg);
+    position: absolute;
+    background-color: rgba(29, 0, 255, 0.64);
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 0 0.5px (0 0 0 0.3);
+    transition: 2s;
+    left: 100px;
+    font-size: 20px;
+}
+
+.infobulle2::before{
+    content: "";
+    position: absolute;
+    border-bottom: 10px solid rgba(29, 0, 255, 0.64);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-top: -10px;
+    margin-left: 60px;
+}
+.element:hover> .infobulle2{
+    transform: scale(1) rotatez(0);
+}
+
+.infobulle3{
+    transform: scale(0) rotateY(-180deg);
+    position: absolute;
+    background-color: rgba(0, 255, 10, 0.67);
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 0 0.5px (0 0 0 0.3);
+    transition: 2s;
+    left: 100px;
+    font-size: 20px;
+}
+
+.infobulle3::before{
+    content: "";
+    position: absolute;
+    border-bottom: 10px solid rgba(0, 255, 10, 0.67);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-top: -10px;
+    margin-left: 60px;
+}
+.element:hover> .infobulle3{
+    transform: scale(1) rotateY(0);
+}
 /*fans
 ==============*/
 
@@ -177,50 +271,57 @@ cite{
 }
 
 .galerie1{
-    transform: rotate(-15deg);
     position: absolute;
     left: 100px;
     top: 15px;
+    transform: scale(1) rotate(-15deg);
+    transition: 1s ease-in-out;
 }
 
 .galerie2{
     position: absolute;
     left: 450px;
     top: 20px;
-    transform: rotate(10deg);
+    transform: scale(1) rotate(10deg);
+    transition: 1s ease-in-out;
 }
 
 .galerie3{
     position: absolute;
     right: 20px;
-    transform:rotate(-10deg);
+    transform: scale(1) rotate(-10deg);
+    transition: 1s ease-in-out;
 }
 
 .galerie4{
     position: absolute;
     top: 180px;
     left: 190px;
-    transform: rotate(-20deg);
+    transform: scale(1) rotate(-20deg);
+    transition: 1s ease-in-out;
 }
 
 .galerie5{
     position: absolute;
     top: 200px;
     right:100px;
-    transform: rotate(18deg)
+    transform: scale(1) rotate(18deg);
+    transition: 1s ease-in-out;
 }
 
 .galerie6{
     position: absolute;
     top: 280px;
     left: 450px;
-    transform: rotate(15deg);
+    transform: scale(1) rotate(15deg);
+    transition: 1s ease-in-out;
 }
 
 .galerie7{
     position: absolute;
     top: 350px;
-    transform: rotate(20deg);
+    transform: scale(1) rotate(20deg);
+    transition: 1s ease-in-out;
     left: 80px;
 }
 
@@ -228,56 +329,49 @@ cite{
     position: absolute;
     top: 380px;
     right: 30px;
-    transform: rotate(-20deg);
+    transform: scale(1) rotate(-20deg);
+    transition: 1s ease-in-out;
 }
 
 galerie9{
     position: absolute;
     top: 400px;
     left: 450px;
-    transform: rotate(-10deg);
+    transform: scale(1) rotate(-10deg);
+    transition: 1s ease-in-out;
     
 }
 
 .galerie1:hover{
-    height: 500px;
-    width: 600px;
-    transition: 1s;
+    transform: scale(2);
 }
+
 .galerie2:hover{
-    height: 500px;
-    width: 600px;
-    transition: 1s;
+    transform: scale(2);
 }
+
 .galerie3:hover{
-    height: 500px;
-    width: 600px;
-    transition: 1s;
+    transform: scale(2);
 }
+
 .galerie4:hover{
-    height: 500px;
-    width: 600px;
-    transition: 1s;
+   transform: scale(2);
 }
+
 .galerie5:hover{
-    height: 500px;
-    width: 600px;
-    transition: 1s;
+    transform: scale(2);
 }
+
 .galerie6:hover{
-    height: 500px;
-    width: 600px;
-    transition: 1s;
+   transform: scale(2);
 }
+
 .galerie7:hover{
-    height: 500px;
-    width: 600px;
-    transition: 1s;
+   transform: scale(2);
 }
+
 .galerie8:hover{
-    height: 500px;
-    width: 600px;
-    transition: 1s;
+   transform: scale(2);
 }
 
 
