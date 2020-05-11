@@ -12,13 +12,16 @@ html{
     background-color: white;
     font-family: 'benchnine' , sans-serif;
     font-size: 20px;
-    border-radius: 15px;
+    border-radius: 30px;
+    padding: 10px;
 }
 .ml-auto{
     background-color: white;
     border-radius: 30px;
     font-family: 'benchnine' , sans-serif;
     font-size: 20px;
+    text-align: center;
+    width: 230px;
 }
 
 /*passionné
@@ -38,7 +41,7 @@ header{
     height: 300px;
     width: 300px;
 }
-.site{
+.mordus{
     color: #baaaaa;
     position: absolute;
     top: 80px;
@@ -60,7 +63,7 @@ header{
     right: 10px;
 }
 
-.site:hover{
+.mordus:hover{
     background-image: url(../ressource/image/audiRS8.jpg);
     transition: 0.5s;
     color: transparent;
@@ -143,9 +146,9 @@ p{
 }
 
 .infobulle{
-    transform: scale(0) rotateX(-180deg);
+    transform: scale(0) rotateX(-360deg);
     position: absolute;
-    background-color: rgba(242, 8, 8, 0.56);
+    background-color: rgba(0, 0, 0, 0.56);
     color: white;
     border-radius: 10px;
     margin-top: 10px;
@@ -158,7 +161,7 @@ p{
 .infobulle::before{
     content: "";
     position: absolute;
-    border-bottom: 10px solid rgba(242, 8, 8, 0.56);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.56);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     margin-top: -10px;
@@ -172,7 +175,7 @@ p{
 .infobulle2{
     transform: scale(0) rotatez(-180deg);
     position: absolute;
-    background-color: rgba(29, 0, 255, 0.64);
+    background-color: rgba(0, 0, 0, 0.56);
     color: white;
     border-radius: 10px;
     margin-top: 10px;
@@ -185,7 +188,7 @@ p{
 .infobulle2::before{
     content: "";
     position: absolute;
-    border-bottom: 10px solid rgba(29, 0, 255, 0.64);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.56);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     margin-top: -10px;
@@ -198,7 +201,7 @@ p{
 .infobulle3{
     transform: scale(0) rotateY(-180deg);
     position: absolute;
-    background-color: rgba(0, 255, 10, 0.67);
+    background-color: rgba(0, 0, 0, 0.56);
     color: white;
     border-radius: 10px;
     margin-top: 10px;
@@ -211,7 +214,7 @@ p{
 .infobulle3::before{
     content: "";
     position: absolute;
-    border-bottom: 10px solid rgba(0, 255, 10, 0.67);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.56);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     margin-top: -10px;
@@ -231,7 +234,7 @@ p{
     height: 100vh;
     
 }
-.fan h2{
+ h2{
     text-align: center;
     font-family: 'benchnine',sans-serif;
     font-weight: 180;
@@ -242,6 +245,7 @@ blockquote{
     font-size: 20px;
     color: white;
     margin: 10px;
+    position: relative;
     
 }
 .girls{
@@ -264,115 +268,143 @@ cite{
 =============*/
 
 .galerie-photo img{
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     border: 4px solid #a2a2a2;
-    margin: 0;
+    margin: auto;
+    position: relative;
 }
 
+
 .galerie1{
-    position: absolute;
-    left: 100px;
-    top: 15px;
+    right: 20px;
+    top: 35px;
     transform: scale(1) rotate(-15deg);
     transition: 1s ease-in-out;
 }
 
 .galerie2{
-    position: absolute;
-    left: 450px;
-    top: 20px;
     transform: scale(1) rotate(10deg);
     transition: 1s ease-in-out;
 }
 
 .galerie3{
-    position: absolute;
-    right: 20px;
+    left: 0px;
+    bottom: 0px;
     transform: scale(1) rotate(-10deg);
     transition: 1s ease-in-out;
 }
 
 .galerie4{
-    position: absolute;
-    top: 180px;
-    left: 190px;
-    transform: scale(1) rotate(-20deg);
+    bottom: 50px;
+    transform: scale(1) rotate(20deg);
     transition: 1s ease-in-out;
 }
 
 .galerie5{
-    position: absolute;
-    top: 200px;
-    right:100px;
+    bottom: 0px;
+    left: 50px;
     transform: scale(1) rotate(18deg);
     transition: 1s ease-in-out;
 }
 
 .galerie6{
-    position: absolute;
-    top: 280px;
-    left: 450px;
-    transform: scale(1) rotate(15deg);
+    top:20px;
+    transform: scale(1) rotate(-5deg);
     transition: 1s ease-in-out;
 }
 
 .galerie7{
-    position: absolute;
-    top: 350px;
-    transform: scale(1) rotate(20deg);
-    transition: 1s ease-in-out;
-    left: 80px;
-}
-
-.galerie8{
-    position: absolute;
-    top: 380px;
-    right: 30px;
+    bottom: 100px;
     transform: scale(1) rotate(-20deg);
     transition: 1s ease-in-out;
 }
 
-galerie9{
-    position: absolute;
-    top: 400px;
-    left: 450px;
-    transform: scale(1) rotate(-10deg);
+.galerie8{
+    bottom: 50px;
+    right: 20px;
+    transform: scale(1) rotate(-20deg);
     transition: 1s ease-in-out;
-    
 }
+
 
 .galerie1:hover{
     transform: scale(2);
+    z-index: 2;
 }
 
 .galerie2:hover{
     transform: scale(2);
+    z-index: 2;
 }
 
 .galerie3:hover{
     transform: scale(2);
+    z-index: 2;
 }
 
 .galerie4:hover{
-   transform: scale(2);
+    transform: scale(2);
+    z-index: 2;
 }
 
 .galerie5:hover{
     transform: scale(2);
+    z-index: 2;
 }
 
 .galerie6:hover{
    transform: scale(2);
+    z-index: 2;
 }
 
 .galerie7:hover{
-   transform: scale(2);
+    transform: scale(2);
+    z-index: 2;
 }
 
 .galerie8:hover{
-   transform: scale(2);
+    transform: scale(2);
+    z-index: 2;
 }
 
 
+/*contact
+=============*/
+
+.slider-title h2{
+    
+}
+
+.slider{
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+.slider figure img{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+@keyframes slidy{
+    0%{left: 0%;}
+    20%{left: 0%;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+}
 
